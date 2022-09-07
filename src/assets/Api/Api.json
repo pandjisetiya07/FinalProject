@@ -1,0 +1,19 @@
+{
+    "Destinasi": [
+      { "id":1, "nama-tempat":"Air Terjun Mata Jitu", "lokasi":"Pulau Moyo", "images":"https://ntb.genpi.co/wisata/2637/keunikan-air-terjun-mata-jitu-di-pulau-moyo", "price":"250.000" },
+      { "id":2, "nama-tempat":"Pantai Maluk", "lokasi":"Sumbawa Barat, Maluk", "images":"https://www.medcom.id/rona/wisata-kuliner/0k8gzV9b-menanti-senja-di-pantai-maluk", "price":"150.000" },
+      { "id":3, "nama-tempat":"Pantai Ai Lemak", "lokasi":"Sumbawa Besar, Samota", "images":"https://www.jokembe.com/destinasi/baca/1/77/menikmati-senja-di-pantai-ai-lemak-sumbawa-ntb", "price":"190.000" },
+      { "id":4, "nama-tempat":"Pantai Ai Loang", "lokasi":"Sumbawa Besar, Samota", "images":"https://www.sumbawa.indonesia-tourism.com/ai_loang_beach.html", "price":"190.000" },
+      { "id":5, "nama-tempat":"Bukit Mantar", "lokasi":"Sumbawa Barat, Seteluk", "images":"https://travelspromo.com/htm-wisata/bukit-mantar-sumbawa-ntb/", "price":"160.000" },
+      { "id":6, "nama-tempat":"Pantai Sekongkang", "lokasi":"Sumbawa Barat, Sekongkang", "images":"https://www.senangrekreasi.com/pantai-sekongkang-sumbawa/", "price":"150.000" },
+      { "id":7, "nama-tempat":"Pantai Kencana", "lokasi":"Sumbawa Besar, Badas", "images":"https://sikidang.com/pantai-kencana/", "price":"200.000" },
+      { "id":8, "nama-tempat":"Istana Dalam Loka", "lokasi":"Sumbawa Besar", "images":"http://istislahh.blogspot.com/2014/01/asal-usul-istana-dalam-loka-sumbawa.html", "price":"150.000" },
+      { "id":9, "nama-tempat":"MXGP", "lokasi":"Sumbawa Besar, Samota", "images":"https://otomotif.kompas.com/read/2022/06/26/121100815/mengenal-sirkuit-rocket-motor-samota-yang-gelar-mxgp-indonesia", "price":"250.000" },
+      { "id":10, "nama-tempat":"Pantai Leppu", "lokasi":"Sumbawa, Labangka", "images":"https://www.suarantb.com/2018/04/06/pantai-leppu-labangka-yang-masih-%E2%80%9Cperawan%E2%80%9D/", "price":"300.000" },
+      { "id":11, "nama-tempat":"Pulau Bungin", "lokasi":"Sumbawa, Alas", "images":"https://sikidang.com/pulau-bungin/", "price":"200.000" },
+      { "id":12, "nama-tempat":"Pulau Paserang", "lokasi":"Sumbawa, Tano", "images":"https://www.tripadvisor.co.id/Attraction_Review-g297735-d7037914-Reviews-Paserang_Island-Sumbawa_West_Nusa_Tenggara.html", "price":"225.000" },
+      { "id":13, "nama-tempat":"Pulau Kenawa", "lokasi":"Sumbawa, Tano", "images":"https://travel.okezone.com/read/2022/01/17/408/2533190/pulau-kenawa-surga-kecil-di-sumbawa-barat-dengan-pesona-menakjubkan", "price":"225.000" },
+      { "id":14, "nama-tempat":"Labu Pade", "lokasi":"Sumbawa, Utan", "images":"http://lsotour.blogspot.com/2012/02/labu-pade.html", "price":"200.000" },
+      { "id":15, "nama-tempat":"Pulau Bedil", "lokasi":"Sumbawa, Utan", "images":"https://sumbawa.pikiran-rakyat.com/sumbawa-raya/pr-301436567/gili-bedil-surga-mungil-yang-harus-dikunjungi-di-sumbawa", "price":"200.000" }
+    ]
+}
