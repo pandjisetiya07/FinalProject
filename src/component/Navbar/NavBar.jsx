@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './NavStyle.css'
+import { BsPersonFill } from "react-icons/bs";
 
 function NavBar() {
   return (
@@ -17,17 +18,20 @@ function NavBar() {
                               <Link to="/" className="nav-link">Home</Link>
                           </li>
                           <li className="nav-item">
-                              <Link to="/destination" className="nav-link">Destination</Link>
+                              <Link to="/destination" className="nav-link">Destination And Tour</Link>
                           </li>
-                          <li className="nav-item">
+                          {/* <li className="nav-item">
                               <Link to="/tour" className="nav-link">Tour And Travel</Link>
-                          </li>
+                          </li> */}
                           <li className="nav-item">
                               <Link to="/aboutus" className="nav-link">About Us</Link>
                           </li>
                       </ul>
                   </div>
               </div>
+            <div className="icon">
+              <Link to="" className='person'> <BsPersonFill />  </Link>
+            </div>
           </nav>
     </>
   )

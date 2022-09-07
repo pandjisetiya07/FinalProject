@@ -11,7 +11,7 @@
     font-weight: bold;
     font-size: 25px;
     border-radius: 20px;
-    
+    text-align: center;
 }
 
 #personal{
@@ -23,4 +23,10 @@
 .nav-item .nav-link:hover{
     color: rgb(223, 126, 0);
     border-radius: 20px;
+}
+
+.person{
+    color: rgb(255, 255, 255);
+    font-size: 30px;  
+    /* background-color: black;   */
 }
