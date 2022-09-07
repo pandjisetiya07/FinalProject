@@ -1,0 +1,21 @@
+.container .me-2 {
+    padding: 13px;
+    background: rgba(255, 255, 255, 0.311);
+    border: 3px solid white;
+
+}
+
+.titleHead{
+    text-align: center;
+    font-family: serif;
+    margin-top: 13%;
+}
+
+span{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.subHead{
+    text-align: center;
+}
