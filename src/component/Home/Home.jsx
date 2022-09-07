@@ -11,7 +11,7 @@ function Home() {
         <NavBar />
         <div className='container'>
             <div className="titleHead">
-                <h1 className='title'>Welcome to <span>Ngiung Travel Tour</span></h1>
+                <h1 className='title hover-underline-animation'>Welcome to <span>Ngiung Travel Tour</span></h1>
             </div>
             <div className="subHead">
                 <h5 className="subtitle">Destinasi Wisata dan Tour Sumbawa Nusa Tenggara Barat</h5>
