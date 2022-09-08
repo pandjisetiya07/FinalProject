@@ -1,0 +1,65 @@
+.d-block{
+    border-radius: 25px;
+}
+
+@media screen and (min-width: 601px) {
+    .title{
+      font-size: 50px;
+    }
+    .subtitle{
+        font-size: 25px;
+    }
+  }
+  @media screen and (max-width: 1001px) {
+    .title{
+      font-size: 30px;
+    }
+    .subtitle{
+        font-size: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 801px) {
+    .title{
+      font-size: 20px;
+    }
+    .subtitle{
+        font-size: 10px;
+    }
+  }
+
+  @media screen and (max-width: 401px) {
+    .title{
+      font-size: 15px;
+    }
+    .subtitle{
+        font-size: 8px;
+    }
+  }
+
+
+  /* bagian about us */
+.subAbout{
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 770px) {
+    .subAbout {
+        font-size: 10px;
+    }
+    .logo img{
+        display: none;
+    }
+  }
+
+
+  @media screen and (max-width: 1001px) {
+    .subAbout {
+        font-size: 12px;
+    }
+  }
+
+  
+
+    
