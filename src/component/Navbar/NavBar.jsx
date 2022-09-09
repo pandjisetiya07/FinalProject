@@ -22,8 +22,8 @@ function NavBar() {
                   Destination
                 </Link>
                 <ul className="dropdown-menu">
-                  <li><Link to="sumbawa" className="dropdown-item">Sumbawa Besar</Link></li>
-                  <li><Link to="ksb" className="dropdown-item">Sumbawa Barat</Link></li>
+                  <li><Link to="/sumbawa" className="dropdown-item">Sumbawa Besar</Link></li>
+                  <li><Link to="/ksb" className="dropdown-item">Sumbawa Barat</Link></li>
                 </ul>
               </li>
               {/* <li className="nav-item">
