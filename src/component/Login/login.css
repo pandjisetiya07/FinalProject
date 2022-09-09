@@ -1,0 +1,13 @@
+.login,
+.image {
+  min-height: 100vh;
+}
+.bg-image {
+  background-image: url('https://sampaijauh.com/wp-content/uploads/2021/07/Air-Terjun-Mata-Jitu-di-Sumbawa.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+#header{
+  justify-items: center;
+  align-items: center;
+}
