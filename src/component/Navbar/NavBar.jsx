@@ -8,7 +8,7 @@ function NavBar() {
     <>
       <nav className="container navbar navbar-expand-lg">
         <div className="container">
-          <Link to="/" className="navbar-brand" id='personal'>Final Project</Link>
+          <Link to="/" className="navbar-brand" id='personal'>Ngiung TRVL</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -31,6 +31,9 @@ function NavBar() {
                           </li> */}
               <li className="nav-item">
                 <Link to="/aboutus" className="nav-link">About Us</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/transaksi" className="nav-link">Transaksi</Link>
               </li>
               <li className="nav-item">
                 <Link to="/Login" className="nav-link">Account</Link>

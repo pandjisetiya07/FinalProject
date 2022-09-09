@@ -4,7 +4,9 @@ import  Sumbawa from './component/sumbawa/Sumbawa';
 import Ksb from './component/ksb/Ksb'
 import Tour from './component/Tour/Tour';
 import AboutUs from './component/Aboutus/AboutUs';
+import Transaksi from './component/Transaksi/Transaksi';
 import Login from './component/Login/Login';
+import Footer from './component/Footer/Footer';
 
 function App() {
   return (
@@ -15,8 +17,10 @@ function App() {
       <Route path='ksb' element={<Ksb /> } />
       <Route path='tour' element={<Tour /> } />
       <Route path='aboutus' element={<AboutUs /> } />
+      <Route path='transaksi' element={<Transaksi />} />
       <Route path='Login' element={<Login /> } />
     </Routes>
+    <Footer />
    </>
   );
 }
