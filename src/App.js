@@ -4,6 +4,7 @@ import  Sumbawa from './component/sumbawa/Sumbawa';
 import Ksb from './component/ksb/Ksb'
 import Tour from './component/Tour/Tour';
 import AboutUs from './component/Aboutus/AboutUs';
+import Login from './component/Login/Login';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path='ksb' element={<Ksb /> } />
       <Route path='tour' element={<Tour /> } />
       <Route path='aboutus' element={<AboutUs /> } />
+      <Route path='Login' element={<Login /> } />
     </Routes>
    </>
   );
