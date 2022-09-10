@@ -1,17 +1,18 @@
 import './login.css';
 import React from 'react';
+import { link } from 'react-router-dom'
 
 
-function App() { {
+function Login() { 
    
     return (
      
-       <div classNameName="maincontainer">
+    //    <div classNameName="maincontainer">
         <div className="container-fluid">
             <div className="row no-gutter">
                
                 <div className="col-md-6 d-none d-md-flex bg-image">
-                    <h1>Ngiung TRVL</h1>
+                    {/* <h1>Ngiung TRVL</h1> */}
                 </div>
                 
                 <div className="col-md-6 bg-light">
@@ -45,10 +46,10 @@ function App() { {
                 </div>
             </div>
         </div>
-      </div>
+    //   </div>
       
 )
 }
-}
 
-export default App;
+
+export default Login;
