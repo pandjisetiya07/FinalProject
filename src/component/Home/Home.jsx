@@ -1,8 +1,7 @@
 import React from 'react'
 import NavBar from '../Navbar/NavBar'
 import './HomeStyle.css'
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+
 
 function Home() {
   return (
@@ -18,16 +17,6 @@ function Home() {
             </div>
 
         </div>
-
-        <Form className="container d-flex">
-            <Form.Control
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-            />
-        <Button variant="outline-primary" className='button'>Search</Button>
-        </Form>
     </div>
     </>
   )
