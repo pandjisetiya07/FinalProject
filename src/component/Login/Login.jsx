@@ -10,7 +10,9 @@ function App() { {
         <div className="container-fluid">
             <div className="row no-gutter">
                
-                <div className="col-md-6 d-none d-md-flex bg-image"></div>
+                <div className="col-md-6 d-none d-md-flex bg-image">
+                    <h1>Ngiung TRVL</h1>
+                </div>
                 
                 <div className="col-md-6 bg-light">
                     <div className="login d-flex align-items-center py-5">
