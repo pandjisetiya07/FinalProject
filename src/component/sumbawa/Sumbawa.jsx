@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import './sumbawa.css'
 
 function Sumbawa() {
 
@@ -34,9 +35,9 @@ function Sumbawa() {
 
         return(
         
-            <div className="col-lg-3 col-md-4 col-sm-6 py-3">
+            <div className="col-lg-4 col-md-6 col-sm-6 py-3">
               <Card key={id}>
-                <Card.Img variant="top" src={images} />
+                <Card.Img className='img' variant="top" src={images} />
                 <Card.Body>
                   <Card.Title>{namaTempat}</Card.Title>
                   <Card.Text>
