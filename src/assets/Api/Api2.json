@@ -1,20 +1,27 @@
 {
-    "Destinasi Sumbawa": [
-      { "id":"1", "nama-tempat":"Air Terjun Mata Jitu", "lokasi":"Pulau Moyo", "images":"https://phinemo.com/wp-content/uploads/2020/10/air-terjun-mata-jitu-puau-moyo-NTB-min-1.jpg", "price":"250.000" },
-      { "id":"2", "nama-tempat":"Pantai Ai Lemak", "lokasi":"Sumbawa Besar, Samota", "images":"https://www.jokembe.com/asset/gambar/Sunset_di_pantai_Ai_Lemak_Sumbawa.jpg", "price":"190.000" },
-      { "id":"3", "nama-tempat":"Pantai Ai Loang", "lokasi":"Sumbawa Besar, Samota", "images":"https://www.sumbawa.indonesia-tourism.com/images/ai_loang_beach.jpg", "price":"190.000" },
-      { "id":"4", "nama-tempat":"Pantai Kencana", "lokasi":"Sumbawa Besar, Badas", "images":"https://sikidang.com/wp-content/uploads/Spot-Wisata-di-Pantai-Kencana.jpg", "price":"200.000" },
-      { "id":"5", "nama-tempat":"Istana Dalam Loka", "lokasi":"Sumbawa Besar", "images":"https://2.bp.blogspot.com/-4qGXSzUdRTo/WnUpDlkMuRI/AAAAAAAAPMo/yuR34ltu2-o4SlaGmHx1bClSc-d3XveXwCEwYBhgL/s1600/DSCF4982.JPG", "price":"150.000" },
-      { "id":"6", "nama-tempat":"MXGP", "lokasi":"Sumbawa Besar, Samota", "images":"https://asset.kompas.com/crops/sS9IW_Q3Oznhy1NZsCZe2Ke8sGE=/0x0:800x533/750x500/data/photo/2022/06/26/62b7db1890d97.png", "price":"250.000" },
-      { "id":"7", "nama-tempat":"Pantai Leppu", "lokasi":"Sumbawa, Labangka", "images":"https://www.suarantb.com/wp-content/uploads/2018/04/5-4.jpg", "price":"300.000" },
-      { "id":"8", "nama-tempat":"Pulau Bungin", "lokasi":"Sumbawa, Alas", "images":"https://asset.kompas.com/crops/e0dnPdMlhlg0I2oxudfFMiqcuCs=/0x45:996x709/750x500/data/photo/2022/05/27/6290d9c867921.jpg", "price":"200.000" },
-      { "id":"9", "nama-tempat":"Pulau Paserang", "lokasi":"Sumbawa, Tano", "images":"https://sikidang.com/wp-content/uploads/tips-berkunjung-ke-Pulau-Paserang.jpg", "price":"225.000" },
-      { "id":"10", "nama-tempat":"Pulau Kenawa", "lokasi":"Sumbawa, Tano", "images":"https://sikidang.com/wp-content/uploads/Pulau-Kenawa-1.jpg", "price":"225.000" },
-      { "id":"11", "nama-tempat":"Labu Pade", "lokasi":"Sumbawa, Utan", "images":"https://www.samawarea.com/wp-content/uploads/2015/07/Pantai-Lapade-1.jpg", "price":"200.000" },
-      { "id":"12", "nama-tempat":"Pulau Bedil", "lokasi":"Sumbawa, Utan", "images":"https://www.thelangkahtravel.com/wp-content/uploads/2017/08/Paket-Tour-Sumbawa-3.jpg.webp", "price":"200.000" },
-      { "id":"13", "nama-tempat":"Pantai Jempol", "lokasi":"Sumbawa Besar", "images":"https://images.genpi.co/uploads/news/2018/12/26/4f88702b131444a33a3818515ae35fcf.jpg", "price":"250.000" },
-      { "id":"14", "nama-tempat":"Jembatan Samota", "lokasi":"Sumbawa, Utan", "images":"https://cdn-2.tstatic.net/lombok/foto/bank/images/jembatan-samota-yang-berada-di-kecamatan-sumbawa-kabupaten-sumbawa-ntb-lalu-helmi.jpg", "price":"300.000" },
-      { "id":"15", "nama-tempat":"Air Terjun Ai Beling", "lokasi":"Sumbawa, Moyo", "images":"https://www.thelangkahtravel.com/wp-content/uploads/2019/03/Air-Terjun-Ai-Beling-Sumbawa-NTB.jpg.webp", "price":"180.000" },
-      { "id":"16", "nama-tempat":"Spals Sumbawa Waterpark", "lokasi":"Sumbawa, Semongkat", "images":"https://pbs.twimg.com/media/Bmw_oeTCYAEzaQu.jpg:large", "price":"226.000" }
-    ]
+  "Destinasi Sumbawa": [
+    {
+      "id": "1",
+      "nama-tempat": "Air Terjun Mata Jitu",
+      "lokasi": "Pulau Moyo",
+      "images": "https://phinemo.com/wp-content/uploads/2020/10/air-terjun-mata-jitu-puau-moyo-NTB-min-1.jpg",
+      "Air terjun mata jitu merupakan salah satu destinasi wisata yang akan memanjakan mata para wisatawan. Air terjun mata jitu terletak di pulau Moyo Kabupaten Sumbawa, Nusa Tenggara Barat, Indonesia. Siapa sangka, Air terjun yang terletak ditengah hutan ini memiliki daya tarik yang memikat hati para pengunjung. Bahkan, mendiang Ratu Lady Diana memuji pesona keindahannya.": "",
+      "price": "250.000"
+    },
+    { "id": "2", "nama-tempat": "Pantai Ai Lemak", "lokasi": "Sumbawa Besar, Samota", "images": "https://www.jokembe.com/asset/gambar/Sunset_di_pantai_Ai_Lemak_Sumbawa.jpg", "": "", "price": "190.000" },
+    { "id": "3", "nama-tempat": "Pantai Ai Loang", "lokasi": "Sumbawa Besar, Samota", "images": "https://www.sumbawa.indonesia-tourism.com/images/ai_loang_beach.jpg", "": "", "price": "190.000" },
+    { "id": "4", "nama-tempat": "Pantai Kencana", "lokasi": "Sumbawa Besar, Badas", "images": "https://sikidang.com/wp-content/uploads/Spot-Wisata-di-Pantai-Kencana.jpg", "": "", "price": "200.000" },
+    { "id": "5", "nama-tempat": "Istana Dalam Loka", "lokasi": "Sumbawa Besar", "images": "https://2.bp.blogspot.com/-4qGXSzUdRTo/WnUpDlkMuRI/AAAAAAAAPMo/yuR34ltu2-o4SlaGmHx1bClSc-d3XveXwCEwYBhgL/s1600/DSCF4982.JPG", "": "", "price": "150.000" },
+    { "id": "6", "nama-tempat": "MXGP", "lokasi": "Sumbawa Besar, Samota", "images": "https://asset.kompas.com/crops/sS9IW_Q3Oznhy1NZsCZe2Ke8sGE=/0x0:800x533/750x500/data/photo/2022/06/26/62b7db1890d97.png", "": "", "price": "250.000" },
+    { "id": "7", "nama-tempat": "Pantai Leppu", "lokasi": "Sumbawa, Labangka", "images": "https://www.suarantb.com/wp-content/uploads/2018/04/5-4.jpg", "": "", "price": "300.000" },
+    { "id": "8", "nama-tempat": "Pulau Bungin", "lokasi": "Sumbawa, Alas", "images": "https://asset.kompas.com/crops/e0dnPdMlhlg0I2oxudfFMiqcuCs=/0x45:996x709/750x500/data/photo/2022/05/27/6290d9c867921.jpg", "": "", "price": "200.000" },
+    { "id": "9", "nama-tempat": "Pulau Paserang", "lokasi": "Sumbawa, Tano", "images": "https://sikidang.com/wp-content/uploads/tips-berkunjung-ke-Pulau-Paserang.jpg", "": "", "price": "225.000" },
+    { "id": "10", "nama-tempat": "Pulau Kenawa", "lokasi": "Sumbawa, Tano", "images": "https://sikidang.com/wp-content/uploads/Pulau-Kenawa-1.jpg", "": "", "price": "225.000" },
+    { "id": "11", "nama-tempat": "Labu Pade", "lokasi": "Sumbawa, Utan", "images": "https://www.samawarea.com/wp-content/uploads/2015/07/Pantai-Lapade-1.jpg", "": "", "price": "200.000" },
+    { "id": "12", "nama-tempat": "Pulau Bedil", "lokasi": "Sumbawa, Utan", "images": "https://www.thelangkahtravel.com/wp-content/uploads/2017/08/Paket-Tour-Sumbawa-3.jpg.webp", "": "", "price": "200.000" },
+    { "id": "13", "nama-tempat": "Pantai Jempol", "lokasi": "Sumbawa Besar", "images": "https://images.genpi.co/uploads/news/2018/12/26/4f88702b131444a33a3818515ae35fcf.jpg", "": "", "price": "250.000" },
+    { "id": "14", "nama-tempat": "Jembatan Samota", "lokasi": "Sumbawa, Utan", "images": "https://cdn-2.tstatic.net/lombok/foto/bank/images/jembatan-samota-yang-berada-di-kecamatan-sumbawa-kabupaten-sumbawa-ntb-lalu-helmi.jpg", "": "", "price": "300.000" },
+    { "id": "15", "nama-tempat": "Air Terjun Ai Beling", "lokasi": "Sumbawa, Moyo", "images": "https://www.thelangkahtravel.com/wp-content/uploads/2019/03/Air-Terjun-Ai-Beling-Sumbawa-NTB.jpg.webp", "": "", "price": "180.000" },
+    { "id": "16", "nama-tempat": "Spals Sumbawa Waterpark", "lokasi": "Sumbawa, Semongkat", "images": "https://pbs.twimg.com/media/Bmw_oeTCYAEzaQu.jpg:large", "price": "226.000" }
+  ]
 }
