@@ -84,7 +84,7 @@ function AboutTeam() {
                             <div className="card-body text-center">
                                 <div className="p-4 border radius-15">
                                     <img src="https://bootdey.com/img/Content/avatar/avatar2.png" width="110" height="110" className="rounded-circle shadow" alt="" />
-                                        <h5 className="mb-0 mt-5">Raya Haleluyah</h5>
+                                        <h5 className="mb-0 mt-5">Raya Ibensani</h5>
                                         <p className="mb-3">Android Developer</p>
                                         <div className="list-inline contacts-social mt-3 mb-3"> <Link to="" href="javascript:;" className="list-inline-item bg-facebook text-white border-0"><BsFacebook/></Link >
                                             <Link to="" className="list-inline-item bg-twitter text-white border-0"> <BsTwitter/> </Link >
