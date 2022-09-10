@@ -15,7 +15,7 @@
   background-size: cover;
   background-position: center center;
 }
-.bg-image:after{
+/* .bg-image:after{
   content:'';
   display: block;
   position:fixed;
@@ -33,7 +33,7 @@
     z-index: 1;
     justify-self: center;
     text-align: center;
-}
+} */
 #header{
   justify-items: center;
   align-items: center;
