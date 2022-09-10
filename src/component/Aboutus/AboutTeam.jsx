@@ -16,7 +16,7 @@ function AboutTeam() {
                                 <h5 className="mb-0 mt-5">{item.nama}</h5>
                                 <p className="mb-3">{item.posisi}</p>
                                 <div className="list-inline contacts-social mt-3 mb-3"> 
-                                    <Link to="" href="javascript:;" className="list-inline-item bg-facebook text-white border-0">{item.facebook}</Link >
+                                    <Link to="" href="https://www.youtube.com/watch?v=58RRl1JTJvY:;" className="list-inline-item bg-facebook text-white border-0">{item.facebook}</Link >
                                     <Link to="" className="list-inline-item bg-github text-white border-0">{item.github} </Link >
                                     <Link to="" className="list-inline-item bg-linkedin text-white border-0">{item.linkedin}</Link >
                                 </div>
