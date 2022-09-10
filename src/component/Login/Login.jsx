@@ -1,13 +1,13 @@
 import './login.css';
 import React from 'react';
-import { link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 function Login() { 
    
     return (
-     
-    //    <div classNameName="maincontainer">
+     <>
+    {/* //    <div classNameName="maincontainer"> */}
         <div className="container-fluid">
             <div className="row no-gutter">
                
@@ -34,10 +34,10 @@ function Login() {
                                         <button type="submit" className="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">Sign in</button>
                                         </div>
                                         
-                                        <div className="text-center d-flex justify-content-between mt-4"><p>Don't have an account, let's register first <a href="/register" className="font-italic text-muted"> 
-                                                <u>Register</u></a></p></div>
-                                        <div className="text-center"><p>Back To Home <a href="/" className="font-italic text-muted"> 
-                                        <u>Home</u></a></p></div>
+                                        <div className="text-center d-flex justify-content-between mt-4"><p>Don't have an account, let's register first <Link to="/register" className="font-italic text-muted"> 
+                                                <u>Register</u></Link></p></div>
+                                        <div className="text-center"><p>Back To Home <Link to="/" className="font-italic text-muted"> 
+                                        <u>Home</u></Link></p></div>
                                     </form>
                                 </div>
                             </div>
@@ -46,8 +46,8 @@ function Login() {
                 </div>
             </div>
         </div>
-    //   </div>
-      
+        {/* </div> */}
+        </>
 )
 }
 
