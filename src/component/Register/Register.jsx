@@ -1,9 +1,10 @@
 import "./Register.css";
 import React from "react";
+import { Link } from "react-router-dom";
 
-function App() {
-  {
-    return (
+function Register() {
+  return (
+    <>
       <div classNameName="maincontainer">
         <div className="container-fluid">
           <div className="row no-gutter">
@@ -41,9 +42,9 @@ function App() {
                         <div className="text-center">
                           <p>
                             Back To Home{" "}
-                            <a href="/" className="font-italic text-muted">
+                            <Link to=" " className="font-italic text-muted">
                               <u>Home</u>
-                            </a>
+                            </Link>
                           </p>
                         </div>
                       </form>
@@ -55,8 +56,8 @@ function App() {
           </div>
         </div>
       </div>
-    );
-  }
+    </>
+  );
 }
 
-export default App;
+export default Register;
