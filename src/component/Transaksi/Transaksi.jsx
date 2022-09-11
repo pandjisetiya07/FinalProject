@@ -1,8 +1,12 @@
 import React from 'react'
 import './StyleTransaksi.css'
+import Navbar from '../Navbar/NavBar'
 
 function Transaksi() {
   return (
+    <>
+    <Navbar />
+
     <section>
       <h4>Payment</h4>
       <div className="search">
@@ -24,7 +28,7 @@ function Transaksi() {
         <button><h4> Happy Holidays</h4></button>
       </div>
     </section>
-
+    </>
   );
 }
 
