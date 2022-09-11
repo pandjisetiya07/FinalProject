@@ -37,7 +37,7 @@ function Sumbawa() {
           <div className="row">
 
       {DataSumbawa.map((get) => {
-        const { id, namaTempat, lokasi, images, price } = get;
+        const { id, namaTempat, lokasi, images, price, Deskipsi } = get;
 
         return(
         
@@ -53,7 +53,7 @@ function Sumbawa() {
                 </Card.Body>
                 <Card.Footer>
                   <Button variant="primary" onClick={() => trasnferDataModal(
-                    { id, namaTempat, lokasi, images, price }
+                    { id, namaTempat, lokasi, images, price, Deskipsi }
                   )}>
                     Detail Destinasi
                   </Button>
@@ -68,7 +68,7 @@ function Sumbawa() {
                     <Modal.Header closeButton>
                       <Modal.Title>{modalReact.namaTempat}</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>{modalReact.lokasi}</Modal.Body>
+                    <Modal.Body>{modalReact.Deskipsi}</Modal.Body>
                     <Modal.Footer>
                       <Button variant="secondary" onClick={handleClose}>
                         Close
