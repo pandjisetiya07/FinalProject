@@ -11,7 +11,8 @@ function Sumbawa() {
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // const handleShow = () => setShow(true);
+  const [modalReact, setModalReact] = useState({}) 
 
   const [DataSumbawa, setMyDataSumbawa] = useState([]);
 
@@ -19,6 +20,11 @@ function Sumbawa() {
     const dataSumbawa = await axios.get("https://631843e9f6b281877c677851.mockapi.io/sumbawa");
           setMyDataSumbawa(dataSumbawa.data)      
   }
+
+  const trasnferDataModal = (data) => {
+    setModalReact(data)
+    setShow(true)
+  } 
 
   useEffect(() => {
    getApiDataSumbawa()
@@ -35,26 +41,34 @@ function Sumbawa() {
 
         return(
         
-            <div className="col-lg-4 col-md-6 col-sm-6 py-3">
-              <Card key={id}>
+            <div key={id} className="col-lg-4 col-md-6 col-sm-6 py-3">
+              <Card >
                 <Card.Img className='img' variant="top" src={images} />
                 <Card.Body>
                   <Card.Title>{namaTempat}</Card.Title>
                   <Card.Text>
-                    {lokasi}
-                    {price}
+                    <p>{lokasi}</p>
+                    <p>{price}</p>
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <Button variant="primary" onClick={handleShow}>
+                  <Button variant="primary" onClick={() => trasnferDataModal(
+                    { id, namaTempat, lokasi, images, price }
+                  )}>
                     Detail Destinasi
                   </Button>
 
+                </Card.Footer>
+              </Card>
+            </div>
+            
+        )
+      })}
                   <Modal show={show} onHide={handleClose} animation={false}>
                     <Modal.Header closeButton>
-                      <Modal.Title>Modal heading</Modal.Title>
+                      <Modal.Title>{modalReact.namaTempat}</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                    <Modal.Body>{modalReact.lokasi}</Modal.Body>
                     <Modal.Footer>
                       <Button variant="secondary" onClick={handleClose}>
                         Close
@@ -64,13 +78,6 @@ function Sumbawa() {
                       </Button>
                     </Modal.Footer>
                   </Modal>
-                </Card.Footer>
-              </Card>
-            </div>
-            
-         
-        )
-      })}
        </div>
         </div>
     </>
