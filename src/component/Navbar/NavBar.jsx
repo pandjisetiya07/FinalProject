@@ -1,50 +1,55 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import './NavStyle.css'
-import { BsPersonFill } from "react-icons/bs";
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavBar() {
   return (
     <>
-      <nav className="container navbar navbar-expand-lg">
-        <div className="container">
-          <Link to="/" className="navbar-brand" id='personal'>Ngiung TRVL</Link>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link to="/" className="nav-link">Home</Link>
-              </li>
-              <li className="nav-item dropdown">
-                <Link to="" className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Destination
-                </Link>
-                <ul className="dropdown-menu">
-                  <li><Link to="/sumbawa" className="dropdown-item">Sumbawa Besar</Link></li>
-                  <li><Link to="/ksb" className="dropdown-item">Sumbawa Barat</Link></li>
-                </ul>
-              </li>
-              {/* <li className="nav-item">
-                              <Link to="/tour" className="nav-link">Tour And Travel</Link>
-                          </li> */}
-              <li className="nav-item">
-                <Link to="/aboutus" className="nav-link">About Us</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/transaksi" className="nav-link">Transaksi</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/Login" className="nav-link">Account</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="icon">
-          <Link to="" className='person'> <BsPersonFill />  </Link>
-        </div>
-      </nav>
+      <Navbar bg="light" expand="lg">
+        <Container fluid>
+          <Navbar.Brand href="#">Ngiung Travel</Navbar.Brand>
+          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Collapse id="navbarScroll">
+            <Nav
+              className="me-auto my-2 my-lg-0"
+              style={{ maxHeight: '100px' }}
+              navbarScroll
+            >
+              <Nav.Link href="/">Home</Nav.Link>
+              <NavDropdown title="Destination" id="navbarScrollingDropdown">
+                <NavDropdown.Item href="/sumbawa">Sumbawa Besar</NavDropdown.Item>
+                <NavDropdown.Item href="/ksb">
+                  Sumbawa Barat
+                </NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Link href="/aboutus">
+                About
+              </Nav.Link>
+              <Nav.Link href="/transaksi">
+                Transaksi
+              </Nav.Link>
+              <Nav.Link href="/Login">
+                Login
+              </Nav.Link>
+            </Nav>
+            <Form className="d-flex">
+              <Form.Control
+                type="search"
+                placeholder="Search"
+                className="me-2"
+                aria-label="Search"
+              />
+              <Button variant="outline-success">Search</Button>
+            </Form>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </>
   )
 }
