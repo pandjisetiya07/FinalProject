@@ -1,35 +1,48 @@
-.login,
-.image {
-  min-height: 100vh;
-}
-.maincontainer{
-  text-align: center;
-  justify-content: center;
-  display: flex; 
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-.bg-image {
+body{
   height: 100vh;
-  background-image: url('https://sampaijauh.com/wp-content/uploads/2021/07/Air-Terjun-Mata-Jitu-di-Sumbawa.jpg');
-  background-size: cover;
-  background-position: center center;
+  background-color: rgb(39, 53, 13);
 }
-#header{
-  justify-items: center;
+#LoGin{
+  background-color: rgb(39, 53, 13);
+  overflow: hidden;
+  justify-content: center;
   align-items: center;
+  margin-top: 25px;
+  /* margin-bottom:; */
 }
 .maincontainer{
   background-color: rgb(39, 53, 13);
+  /* overflow:var(rgb(127, 255, 212)); */
 }
-#Body{
-  width: 75%;
+.tittle{
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+.form-input{
+  position: relative;
+}
+
+.form-box button[type="submit"]{
+  margin-top: 10px;
+  cursor: pointer;
+  background: #007bff;
+  color: #fff;
+}
+.card{
+  overflow: hidden;
+  border: 0 ;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  justify-content: center center;
+  align-content: center center;
+}
+.card-body{
+  padding: 2rem;
+  margin-top: 2rem;
   min-height: 65%;
-  /* min-height: min-content; */
-  width: 75%;
-  min-height: 65%;
-  /* box-sizing: border-box; */
-  /* border-radius: 50%;
-  margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0,0,0,.2); */
+}
+.bg-image {
+  height: 100%;
+  background-image: url('https://sampaijauh.com/wp-content/uploads/2021/07/Air-Terjun-Mata-Jitu-di-Sumbawa.jpg');
+  background-size: cover;
+  background-position: center;
 }
