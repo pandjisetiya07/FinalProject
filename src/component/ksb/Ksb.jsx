@@ -5,9 +5,9 @@ import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-// import './sumbawa.css'
+import './ksb.css'
 
-function Sumbawa() {
+function Ksb() {
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -84,4 +84,4 @@ function Sumbawa() {
   )
 }
 
-export default Sumbawa
+export default Ksb
