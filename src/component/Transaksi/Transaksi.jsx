@@ -1,69 +1,77 @@
 import React from 'react'
 import './StyleTransaksi.css'
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import Navbar from '../Navbar/NavBar'
-import FormulirTransaksi from './FormulirTransaksi';
+
 
 function Transaksi() {
   return (
     <>
       <Navbar />
-      <Form>
-        <fieldset>
-          <h4><strong>PAYMENT</strong></h4>
-          <Form.Group className="mb-3">
-            <Form.Label htmlFor="">Where</Form.Label>
-            <Form.Select id="">
-              <option>Search Your Destination</option>
-              <option>Sumbawa Besar</option>
-              <option>Sumbawa Barat</option>
-            </Form.Select>
-          </Form.Group>
-          
-          <Form.Group className="mb-3">
-            <Form.Label htmlFor="">Where</Form.Label>
-            <Form.Select id="">
-              <option>Daftar Detinasi Sumbawa Besar</option>
-            </Form.Select>
-          </Form.Group>
-
-          <Form.Group className="mb-3">
-            <Form.Label htmlFor="">Where</Form.Label>
-            <Form.Select id="">
-              <option>Daftar Detinasi Sumbawa Barat</option>
-            </Form.Select>
-          </Form.Group>
-
-          <Form.Group className="mb-3">
-            <Form.Label htmlFor="">When</Form.Label>
-            <input type="date"></input>
-          </Form.Group>
-          <Form.Group className="mb-3">
-            <Form.Label htmlFor="">Type</Form.Label>
-            <Form.Select id="">
-              <option>Choose Your Type</option>
-              <option>Adventure</option>
-              <option>Camping</option>
-            </Form.Select>
-          </Form.Group>
-          <Form.Group className="mb-3">
-            <Form.Label htmlFor="">Choose Ticket</Form.Label>
-            <input type="date"></input>
-          </Form.Group>
-          <Form.Group className="mb-3">
-            <Form.Check
-              type="checkbox"
-              id=""
-              label=""
-            />
-          </Form.Group>
-          <Button type="submit">CHECKOUT</Button>
-        </fieldset>
-      </Form>
-      <FormulirTransaksi />
+      <div name='payment' className='transaksi'>
+        <div className="container">
+          <div className="right">
+            <h4>Biodata Diri</h4>
+            <div className="mb-3">
+              <input id="inputNamaLengkap" type="nama" placeholder="Nama Lengkap" required="" autoFocus="" className="form-control rounded-pill border-0 shadow-sm px-4" />
+            </div>
+            <div className="mb-3">
+              <input id="inputAlamat" type="alamat" placeholder="Alamat" required="" autoFocus="" className="form-control rounded-pill border-0 shadow-sm px-4" />
+            </div>
+            <div className="mb-3">
+              <input id="inputNIK" type="nik" placeholder="NIK" required="" autoFocus="" className="form-control rounded-pill border-0 shadow-sm px-4" />
+            </div>
+            <div className="mb-3">
+              <input id="inputEmail" type="email" placeholder="Email Addres" required="" autoFocus="" className="form-control rounded-pill border-0 shadow-sm px-4" />
+            </div>
+            <div className="mb-3">
+              <input id="inputNoHandphone" type="handphone" placeholder="No Handphone" required="" autoFocus="" className="form-control rounded-pill border-0 shadow-sm px-4" />
+            </div>
+            <button> Send </button>
+          </div>
+        <form>
+          <div className="input-wrap">
+            <h4>Proses Checkout</h4>
+            <label>Destination</label>
+            <select>
+              <option value="1">Pilih</option>
+              <option value="1">Sumbawa Besar</option>
+              <option value="1">Sumbawa Barat</option>
+            </select>
+          </div>
+          <div className="input-wrap">
+            <label>Type</label>
+            <select>
+              <option value="1">Pilih</option>
+              <option value="1">Adventure</option>
+              <option value="1">Camping</option>
+            </select>
+          </div>
+          <div className="date">
+            <div className="input-wrap">
+              <label>When</label>
+              <input type="date" />
+            </div>
+            <div className="input-wrap">
+              <label>Choose Ticket</label>
+              <input type="date" />
+            </div>
+          </div>
+          <div className="input-wrap">
+            <label>Metode Pembayaran</label>
+            <select>
+              <option value="1">Pilih</option>
+              <option value="1">Transfer Bank</option>
+              <option value="1">Shopeypay</option>
+              <option value="1">Alfamart</option>
+              <option value="1">Indomaret</option>
+            </select>
+          </div>
+          <button> Checkout </button>
+        </form>
+      </div>
+      </div>
     </>
-  );
+  )
 }
 
-export default Transaksi;
+export default Transaksi
