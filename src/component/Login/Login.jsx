@@ -7,23 +7,13 @@ function Login() {
    
     return (
      <>
-      <div className="maincontainer">
-        {/* <div className='Layar'></div> */}
-        {/* <div className='card-body'> */}
-        &nbsp;
         <div id='LoGin' className="containe-fluid">
             <div className="row px-5 d-flex">
             <div className="col-lg-10 col-xl-9 card flex-row mx-auto px-0">
                 <div className="col-md-6 d-none d-md-flex bg-image">
                 </div>
-                
                 <div className="col-md-6 bg-light">
                     <div className="login d-flex align-items-center py-5">
-                       
-                       
-                        {/* <div className="container">
-                            <div className="row">
-                                <div className="col-lg-12 col-xl-7 mx-auto"> */}
                                 <div className="card-body">
                                     <h3 className="title text-center mt-4">Login!</h3>
                                     <p className="text-center text-muted mb-4">Welcome Back to our page!, please fill out the login form before starting</p>
@@ -45,20 +35,13 @@ function Login() {
                                         <div className="text-center"><p>Back To Home <Link to="/" className="font-italic text-muted"> 
                                         <u>Home</u></Link></p></div>
                                     </form>
-                                    {/* <div className='closing' /> */}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> 
             </div>
-            {/* &nbsp; */}
-        {/* </div> */}
-        
         </>
 )
 }
-
-
 export default Login;
