@@ -3,6 +3,7 @@ import './StyleTransaksi.css'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Navbar from '../Navbar/NavBar'
+import FormulirTransaksi from './FormulirTransaksi';
 
 function Transaksi() {
   return (
@@ -60,6 +61,7 @@ function Transaksi() {
           <Button type="submit">CHECKOUT</Button>
         </fieldset>
       </Form>
+      <FormulirTransaksi />
     </>
   );
 }
