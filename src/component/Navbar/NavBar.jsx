@@ -11,9 +11,9 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 function NavBar() {
   return (
     <>
-      <Navbar bg="light" expand="lg">
+      <Navbar className='navbarr navbar-dark' expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#">Ngiung Travel</Navbar.Brand>
+          <Navbar.Brand href="#">NgiungTravel</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -45,7 +45,7 @@ function NavBar() {
                 className="me-2"
                 aria-label="Search"
               />
-              <Button variant="outline-success">Search</Button>
+              <Button variant="outline-light">Search</Button>
             </Form>
           </Navbar.Collapse>
         </Container>

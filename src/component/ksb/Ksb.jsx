@@ -6,6 +6,8 @@ import Modal from 'react-bootstrap/Modal'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './ksb.css'
+import { Link } from 'react-router-dom'
+
 
 function Ksb() {
 
@@ -70,12 +72,11 @@ function Ksb() {
                     </Modal.Header>
                     <Modal.Body>{modalReact.Deskipsi}</Modal.Body>
                     <Modal.Footer>
-                      <Button variant="secondary" onClick={handleClose}>
-                        Close
-                      </Button>
+                    <Link to="/transaksi">
                       <Button variant="primary" onClick={handleClose}>
-                        Save Changes
+                      Booking Ticket
                       </Button>
+                      </Link>
                     </Modal.Footer>
                   </Modal>
        </div>
