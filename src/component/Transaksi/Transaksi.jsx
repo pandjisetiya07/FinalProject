@@ -77,7 +77,7 @@ const hendleKota = (event) =>{
           <Form.Group className="mb-3 form-trs">
             <Form.Label htmlFor="">Tujuan Wisata</Form.Label>
             <Form.Select id="" onChange={(e) => hendleKota()} >
-              <option>Daftar Detinasi Sumbawa Besar</option>
+              <option>Daftar Destinasi</option>
 
               {
                 destinationSelect === 'Sumbawa Besar' && destinasiSumbawa.map( (daftarNama) =>(
