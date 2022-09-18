@@ -25,7 +25,6 @@ const fetchPromise = async () => {
   axios.get(`https://631843e9f6b281877c677851.mockapi.io/sumbawa`),
   axios.get(`https://631843e9f6b281877c677851.mockapi.io/sumbawa_barat`)
 ]);
-
 setDestinasiSumbawa(firstResponse.data)
 setDestinasiSumbawaBarat(secondResponse.data)
 }
@@ -33,6 +32,7 @@ setDestinasiSumbawaBarat(secondResponse.data)
 useEffect(() =>{
   fetchPromise()
   filteretSumbawa()
+  setDestinationSelect(tujuan)
 }, []);
 
 
@@ -76,8 +76,8 @@ const filteretSumbawa = () =>{
             <Form.Label htmlFor="">Kota Destinasi</Form.Label>
             <Form.Select value={destinationSelect} onChange={handleChange}>
               <option>Search Your Destination</option>
-              <option value={'Sumbawa Besar'}>Sumbawa Besar</option>
-              <option value={'Sumbawa Barat'}>Sumbawa Barat</option>
+              <option value={'SumbawaBesar'}>Sumbawa Besar</option>
+              <option value={'SumbawaBarat'}>Sumbawa Barat</option>
             </Form.Select>
           </Form.Group>
           
@@ -87,14 +87,14 @@ const filteretSumbawa = () =>{
               <option>Daftar Destinasi</option>
 
               {
-                destinationSelect === 'Sumbawa Besar' && destinasiSumbawa.map( (daftarNama) =>(
-                  <option key={daftarNama.id} value={daftarNama.id}>{daftarNama.namaTempat}</option>
+                destinationSelect === 'SumbawaBesar' && destinasiSumbawa.map( (daftarNama) =>(
+                  <option selected={id === daftarNama.id} key={daftarNama.id} value={daftarNama.id}>{daftarNama.namaTempat}</option>
                 )
                 )
               }
 
               {
-                destinationSelect === 'Sumbawa Barat' && destinasiSumbawaBarat.map( (daftarNama) =>(
+                destinationSelect === 'SumbawaBarat' && destinasiSumbawaBarat.map( (daftarNama) =>(
                   <option key={daftarNama.id} value={daftarNama.id}>{daftarNama.namaTempat}</option>
                 )
                 )
