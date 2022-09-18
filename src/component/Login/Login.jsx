@@ -1,10 +1,48 @@
 import './login.css';
 import React from 'react';
 import { Link } from 'react-router-dom'
-
+import {useState, useEffect } from 'react';
+import Swal from "sweetalert2";
 
 function Login() { 
+    const [data, setData] = useState([])
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+
+    const login = ()=> {
+        if (data) {
+       const data1 = data.find(user => {
+        return email === user.email && password === user.pwd
+       })
+       if (data1){
+        Swal.fire({
+            title: "Good job!",
+            text: "Berhasil Register ",
+            icon: "success",
+            button: `/Login`,
+          })
+       }else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Login Gagal !',
+          })
+       }
+    }
+
+    }
+
+    useEffect(()=> {
+        fetch("https://631843e9f6b281877c677851.mockapi.io/register", {
+            method : "GET"
+        })
+        .then(response => response.json())
+        .then(data => setData(data))
+        console.log(email);
+    }, [email])
+
    
+
     return (
      <>
         <div id='LoGin' className="containe-fluid">
@@ -20,14 +58,14 @@ function Login() {
                                     <form className='form-box px-3'>
                                     <div className="form-input">
                                         <div className="mb-3">
-                                            <input id="inputEmail" type="email" placeholder="Email" required="" autoFocus="" className="form-control rounded-pill border-0 shadow-sm px-4" />
+                                            <input id="inputEmail" type="email" placeholder="Email" required="" autoFocus="" className="form-control rounded-pill border-0 shadow-sm px-4" onChange={(e)=> setEmail(e.target.value)} />
                                         </div>
                                         <div className="mb-3">
-                                            <input id="inputPassword" type="password" placeholder="Password" required="" className="form-control rounded-pill border-0 shadow-sm px-4 text-primary" />
+                                            <input id="inputPassword" type="password" placeholder="Password" required="" className="form-control rounded-pill border-0 shadow-sm px-4 text-primary" onChange={(e)=> setPassword(e.target.value)}/>
                                         </div>
                                         </div>
                                         <div className="d-grid gap-2 mt-2">
-                                        <button type="submit" className="btn btn-primary btn-block text-uppercase mb-2 rounded-pill  shadow-sm">Sign in</button>
+                                        <button type="submit" className="btn btn-primary btn-block text-uppercase mb-2 rounded-pill  shadow-sm" onClick={()=> login()}>Login</button>
                                         </div>
                                         
                                         <div className="text-center mb-2"><p>Don't have an account?, let's Register first <Link to="/register" className="register-link font-italic text-muted"> 

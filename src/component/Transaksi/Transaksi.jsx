@@ -4,18 +4,19 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Navbar from '../Navbar/NavBar'; 
 import axios from 'axios';
-
+import { useParams } from 'react-router-dom'
 
 
 function Transaksi() {
    // penanda saat user select antara sumbawa besar dan barat
   // Sumbawa Besar || Sumbawa Barat
 const [destinationSelect, setDestinationSelect] = useState("")
-
 const [destinasiSumbawa, setDestinasiSumbawa]=useState([]);
 const [destinasiSumbawaBarat, setDestinasiSumbawaBarat]=useState([]);
+const [stateTransaksi, setStateTransaksi] = useState({});
+const {tujuan, id } = useParams();
 
- const handleChange = (event) => {
+const handleChange = (event) => {
     setDestinationSelect(event.target.value);
   }
 
@@ -31,15 +32,20 @@ setDestinasiSumbawaBarat(secondResponse.data)
 
 useEffect(() =>{
   fetchPromise()
+  filteretSumbawa()
 }, []);
 
-// useEffect(() => {
-//   console.log(destinationSelect)
-// }, [destinationSelect])
 
 const hendleKota = (event) =>{
   const getKotaId = event.target.value;
-  console.log(getKotaId);
+}
+
+const filteretSumbawa = () =>{
+  const selectTransaksi = destinasiSumbawa.filter((destinasi)=> {
+    return destinasi.id === id
+  })
+  setStateTransaksi(selectTransaksi)
+  console.log(selectTransaksi);
 }
 
   return (
@@ -62,6 +68,7 @@ const hendleKota = (event) =>{
               <input id="inputNoHandphone" type="handphone" placeholder="No Handphone" required="" autoFocus="" className="form-control rounded-pill border-0 shadow-sm px-4" />
             </div>
           </div>
+
           <Form>
         <fieldset>
           <h4><strong>Booking</strong></h4>
@@ -103,7 +110,7 @@ const hendleKota = (event) =>{
             </Form.Select>
           </Form.Group>
           <Form.Group className="mb-3 form-trs">
-            <Form.Label htmlFor="">Choose Ticket</Form.Label>
+            <Form.Label htmlFor="">Choose Ticket </Form.Label>
             <input type="date"></input>
           </Form.Group>
           <Button type="submit">CHECKOUT</Button>

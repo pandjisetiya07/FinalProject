@@ -6,6 +6,7 @@ import { useRef, useState, useEffect } from "react";
 import { faCheck, faTimes, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
+import Swal from "sweetalert2";
 
 const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
@@ -14,7 +15,7 @@ const EMAIL_REGEX = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 function Register() {
   const userRef = useRef();
   const errRef = useRef();
-  const [alert, setAlert] = useState('');
+
 
   const [user, setUser] = useState('');
   const [validName, setValidName] = useState(false);
@@ -86,7 +87,16 @@ function Register() {
       .then(result => {
         console.log(result.status)
         if (result.status === 201) {
-          alert('berhasil register')
+          Swal.fire({
+            title: "Good job!",
+            text: "Berhasil Register ",
+            icon: "success",
+            button: "Aww yiss!",
+          }).then((result) => {
+            if (result.value) {
+              window.location.href = `/Login`
+            }
+          })
         } else {
           alert('tidak berhasil register')
         }

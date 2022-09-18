@@ -6,10 +6,11 @@ import Modal from 'react-bootstrap/Modal'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './sumbawa.css'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 function Sumbawa() {
 
+  const navigate =  useNavigate()
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   // const handleShow = () => setShow(true);
@@ -25,6 +26,10 @@ function Sumbawa() {
   const trasnferDataModal = (data) => {
     setModalReact(data)
     setShow(true)
+  }
+
+  const handleBook = (id) => {
+    navigate(`/transaksi/SumbawaBesar/${id}`) 
   }
 
   useEffect(() => {
@@ -72,11 +77,9 @@ function Sumbawa() {
               </Modal.Header>
               <Modal.Body>{modalReact.Deskipsi}</Modal.Body>
               <Modal.Footer>
-                <Link to="/transaksi">
-                  <Button variant="primary" onClick={handleClose}>
+                  <Button variant="primary" onClick={()=>handleBook(modalReact.id)}>
                     Booking Ticket
                   </Button>
-                </Link>
               </Modal.Footer>
             </Modal>
           </div>

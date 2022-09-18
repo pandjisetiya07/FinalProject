@@ -15,7 +15,7 @@ function App() {
         <Route path="sumbawa" element={<Sumbawa />} />
         <Route path="ksb" element={<Ksb />} />
         <Route path="aboutus" element={<AboutUs />} />
-        <Route path="transaksi" element={<Transaksi />} />
+        <Route path="transaksi/:tujuan/:id" element={<Transaksi />} />
         <Route path="Login" element={<Login />} />
         <Route path="Register" element={<Register />} />
       </Routes>
