@@ -54,8 +54,10 @@ function Ksb() {
                   <Card.Body>
                     <Card.Title>{namaTempat}</Card.Title>
                     <Card.Text>
-                      <p>{lokasi}</p>
-                      <p>{price}</p>
+                      {lokasi}
+                    </Card.Text>
+                    <Card.Text>
+                      {price}
                     </Card.Text>
                   </Card.Body>
                   <Card.Footer>
