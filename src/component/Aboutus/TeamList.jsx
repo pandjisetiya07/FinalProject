@@ -5,9 +5,9 @@ import { BsLinkedin } from "react-icons/bs";
 export const TeamList = [
     {
         id : '1',
-        nama : 'M Heykal',
+        nama : 'M Haykal',
         posisi : 'Mentor',
-        gambar : 'https://avatars.githubusercontent.com/u/61259141?v=4',
+        gambar : 'https://bootdey.com/img/Content/avatar/avatar7.png',
         facebook : <BsFacebook />,
         github : <BsGithub/>,
         linkedin : <BsLinkedin/>,
@@ -17,7 +17,7 @@ export const TeamList = [
         id : '2',
         nama : 'Pandji Setiya ',
         posisi : 'Junior FrondEnd Skilvul',
-        gambar : 'https://github.com/pandjisetiya07/FinalProject/blob/development/src/assets/background/pandji.jpeg?raw=true',
+        gambar : 'https://github.com/pandjisetiya07/FinalProject/blob/development/src/assets/background/bg1.jpg?raw=true',
         facebook : <BsFacebook />,
         github : <BsGithub/>,
         linkedin : <BsLinkedin/>,
@@ -25,9 +25,9 @@ export const TeamList = [
 
     {
         id : '3',
-        nama : 'Syakban',
-        posisi : 'Junior FrondEnd Skilvul',
-        gambar : 'https://github.com/pandjisetiya07/FinalProject/blob/development/src/assets/background/raya%20%20(2).jpeg?raw=true',
+        nama : 'M Syakban',
+        posisi : 'Junior FrondEnd Skilvul 2',
+        gambar : 'https://github.com/pandjisetiya07/FinalProject/blob/development/src/assets/background/bg2.jpg?raw=true',
         facebook : <BsFacebook />,
         github : <BsGithub/>,
         linkedin : <BsLinkedin/>,
@@ -35,9 +35,9 @@ export const TeamList = [
 
     {
         id : '4',
-        nama : 'Linda Rahayu',
-        posisi : 'Junior FrondEnd Skilvul',
-        gambar : 'https://github.com/pandjisetiya07/FinalProject/blob/development/src/assets/background/linda.jpeg?raw=true',
+        nama : 'Linda Bucin',
+        posisi : 'Junior FrondEnd Skilvul 3',
+        gambar : 'https://github.com/pandjisetiya07/FinalProject/blob/development/src/assets/background/bg3.jpg?raw=true',
         facebook : <BsFacebook />,
         github : <BsGithub/>,
         linkedin : <BsLinkedin/>,
@@ -45,9 +45,9 @@ export const TeamList = [
 
     {
         id : '5',
-        nama : 'Raya Ibensani',
-        posisi : 'Junior FrondEnd Skilvul',
-        gambar : 'https://github.com/pandjisetiya07/FinalProject/blob/development/src/assets/background/raya%20%20(1).jpeg?raw=true',
+        nama : 'Raya Aja dah',
+        posisi : 'Junior FrondEnd Skilvul 4',
+        gambar : 'https://github.com/pandjisetiya07/FinalProject/blob/development/src/assets/background/bg4.jpg?raw=true',
         facebook : <BsFacebook />,
         github : <BsGithub/>,
         linkedin : <BsLinkedin/>,
@@ -55,9 +55,9 @@ export const TeamList = [
 
     {
         id : '6',
-        nama : 'Khairunnisah',
-        posisi : 'Junior FrondEnd Skilvul',
-        gambar : 'https://github.com/pandjisetiya07/FinalProject/blob/development/src/assets/background/nisa.jfif',
+        nama : 'Nisa Ngilang',
+        posisi : 'Junior FrondEnd Skilvul 5',
+        gambar : 'https://github.com/pandjisetiya07/FinalProject/blob/development/src/assets/background/bg2.jpg?raw=tru',
         facebook : <BsFacebook />,
         github : <BsGithub/>,
         linkedin : <BsLinkedin/>,
