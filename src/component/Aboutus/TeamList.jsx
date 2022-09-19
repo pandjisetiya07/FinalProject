@@ -5,7 +5,7 @@ import { BsLinkedin } from "react-icons/bs";
 export const TeamList = [
     {
         id : '1',
-        nama : 'M Heykal',
+        nama : 'M Haykal',
         posisi : 'Mentor',
         gambar : 'https://bootdey.com/img/Content/avatar/avatar7.png',
         facebook : <BsFacebook />,
@@ -25,8 +25,8 @@ export const TeamList = [
 
     {
         id : '3',
-        nama : 'Syakban',
-        posisi : 'Junior FrondEnd Skilvul',
+        nama : 'M Syakban',
+        posisi : 'Junior FrondEnd Skilvul 2',
         gambar : 'https://github.com/pandjisetiya07/FinalProject/blob/development/src/assets/background/bg2.jpg?raw=true',
         facebook : <BsFacebook />,
         github : <BsGithub/>,
@@ -35,8 +35,8 @@ export const TeamList = [
 
     {
         id : '4',
-        nama : 'Linda Rahayu',
-        posisi : 'Junior FrondEnd Skilvul',
+        nama : 'Linda Bucin',
+        posisi : 'Junior FrondEnd Skilvul 3',
         gambar : 'https://github.com/pandjisetiya07/FinalProject/blob/development/src/assets/background/bg3.jpg?raw=true',
         facebook : <BsFacebook />,
         github : <BsGithub/>,
@@ -45,8 +45,8 @@ export const TeamList = [
 
     {
         id : '5',
-        nama : 'Raya Ibensani',
-        posisi : 'Junior FrondEnd Skilvul',
+        nama : 'Raya Aja dah',
+        posisi : 'Junior FrondEnd Skilvul 4',
         gambar : 'https://github.com/pandjisetiya07/FinalProject/blob/development/src/assets/background/bg4.jpg?raw=true',
         facebook : <BsFacebook />,
         github : <BsGithub/>,
@@ -55,8 +55,8 @@ export const TeamList = [
 
     {
         id : '6',
-        nama : 'Khairunnisah',
-        posisi : 'Junior FrondEnd Skilvul',
+        nama : 'Nisa Ngilang',
+        posisi : 'Junior FrondEnd Skilvul 5',
         gambar : 'https://github.com/pandjisetiya07/FinalProject/blob/development/src/assets/background/bg2.jpg?raw=tru',
         facebook : <BsFacebook />,
         github : <BsGithub/>,
