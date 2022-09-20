@@ -73,24 +73,24 @@ function Transaksi() {
     }
     console.log(data);
 
-    axios.post('https://631843e9f6b281877c677851.mockapi.io/register', data)
-    .then(result => {
-      console.log(result.status)
-      if (result.status === 201) {
-        Swal.fire({
-          title: "Good job!",
-          text: "Berhasil Register ",
-          icon: "success",
-          button: "Aww yiss!",
-        }).then((result) => {
-          if (result.value) {
-            window.location.href = `/Login`
-          }
-        })
-      } else {
-        alert('tidak berhasil register')
-      }
-    })
+    // axios.post('https://631843e9f6b281877c677851.mockapi.io/register', data)
+    // .then(result => {
+    //   console.log(result.status)
+    //   if (result.status === 201) {
+    //     Swal.fire({
+    //       title: "Good job!",
+    //       text: "Berhasil Register ",
+    //       icon: "success",
+    //       button: "Aww yiss!",
+    //     }).then((result) => {
+    //       if (result.value) {
+    //         window.location.href = `/Login`
+    //       }
+    //     })
+    //   } else {
+    //     alert('tidak berhasil register')
+    //   }
+    // })
   }
 
   return (
