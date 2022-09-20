@@ -7,19 +7,31 @@ import Transaksi from "./component/Transaksi/Transaksi";
 import Login from "./component/Login/Login";
 import Footer from "./component/Footer/Footer";
 import Register from "./component/Register/Register";
+import { AppContext } from './context/AppContext';
+import { useState } from 'react';
+
 function App() {
+  const [language, setLanguage] = useState("en")
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="sumbawa" element={<Sumbawa />} />
-        <Route path="ksb" element={<Ksb />} />
-        <Route path="aboutus" element={<AboutUs />} />
-        <Route path="transaksi/:tujuan/:id" element={<Transaksi />} />
-        <Route path="Login" element={<Login />} />
-        <Route path="Register" element={<Register />} />
-      </Routes>
-      <Footer />
+      <AppContext.Provider
+        value={{
+          lang: language,
+          onchangeLang: setLanguage,
+        }}
+      >
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="sumbawa" element={<Sumbawa />} />
+          <Route path="ksb" element={<Ksb />} />
+          <Route path="aboutus" element={<AboutUs />} />
+          <Route path="transaksi/:tujuan/:id" element={<Transaksi />} />
+          <Route path="Login" element={<Login />} />
+          <Route path="Register" element={<Register />} />
+        </Routes>
+        <Footer />
+      </AppContext.Provider>
     </>
   );
 }

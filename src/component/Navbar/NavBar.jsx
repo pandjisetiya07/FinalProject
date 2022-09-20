@@ -7,13 +7,14 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import {CheckLogin} from "../../helpers/checkLogin" 
-import {useNavigate} from "react-router-dom"
+import { CheckLogin } from "../../helpers/checkLogin"
+import { useNavigate } from "react-router-dom"
 import Swal from "sweetalert2";
+import { AppContext } from '../../context/AppContext'
 
 function NavBar() {
   const navigate = useNavigate()
-  const {isLogin} = CheckLogin()
+  const { isLogin } = CheckLogin()
   const handleLogout = () => {
     localStorage.removeItem('login')
     Swal.fire({
@@ -24,6 +25,7 @@ function NavBar() {
     })
     navigate('/login')
   }
+  const context = React.useContext(AppContext)
 
   return (
     <>
@@ -37,26 +39,27 @@ function NavBar() {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link href="/">Home</Nav.Link>
-              <NavDropdown title="Destination" id="navbarScrollingDropdown">
+              <Nav.Link href="/">{context.lang==='en' ? 'Home' : 'Beranda'}</Nav.Link>
+              <NavDropdown title={context.lang==='en' ? 'Destination' : 'Destinasi'} id="navbarScrollingDropdown">
                 <NavDropdown.Item href="/sumbawa">Sumbawa Besar</NavDropdown.Item>
                 <NavDropdown.Item href="/ksb">
                   Sumbawa Barat
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="/aboutus">
-                About
+              {context.lang==='en' ? 'About' : 'Tentang'}
               </Nav.Link>
               {
                 isLogin ?
-                <Nav.Link onClick={handleLogout}>Log Out</Nav.Link>
-                :
+                  <Nav.Link onClick={handleLogout}>{context.lang==='en' ? 'Logout' : 'Keluar'}</Nav.Link>
+                  :
                   <Nav.Link href="/Login">
-                Login
-              </Nav.Link>
+                    {context.lang==='en' ? 'Login' : 'Masuk'}
+                  </Nav.Link>
               }
             </Nav>
-            <Form className="d-flex">
+            <Button variant="outline-light" onClick={() => context.onchangeLang(context.lang === "en" ? "id" : "en")}>EN / ID</Button>
+            {/* <Form className="d-flex">
               <Form.Control
                 type="search"
                 placeholder="Search"
@@ -64,7 +67,7 @@ function NavBar() {
                 aria-label="Search"
               />
               <Button variant="outline-light">Search</Button>
-            </Form>
+            </Form> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>
