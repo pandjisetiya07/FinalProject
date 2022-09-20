@@ -25,7 +25,7 @@ export const TeamList = [
 
     {
         id : '3',
-        nama : 'M Syakban',
+        nama : 'Ahmad Syakban',
         posisi : 'Junior FrondEnd Skilvul 2',
         gambar : 'https://github.com/pandjisetiya07/FinalProject/blob/development/src/assets/background/bg2.jpg?raw=true',
         facebook : <BsFacebook />,

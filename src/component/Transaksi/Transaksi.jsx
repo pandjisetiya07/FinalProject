@@ -5,6 +5,7 @@ import Form from 'react-bootstrap/Form';
 import Navbar from '../Navbar/NavBar';
 import axios from 'axios';
 import { useParams } from 'react-router-dom'
+import { AppContext } from '../../context/AppContext'
 import Swal from "sweetalert2";
 
 
@@ -93,18 +94,20 @@ function Transaksi() {
     // })
   }
 
+  const context = React.useContext(AppContext)
+
   return (
     <>
       <Navbar />
       <div name='payment' className='transaksi'>
         <div className="container">
           <div className="right">
-            <h4>Biodata Diri</h4>
+            <h4>{context.lang==='en' ? 'Biodata' : 'Biodata'}</h4>
             <div className="mb-3">
               <input
                 id="inputNamaLengkap"
                 type="nama"
-                placeholder="Nama Lengkap"
+                placeholder={context.lang==='en' ? 'Full Name' : 'Nama Lengkap'}
                 onChange={(e) => setUser(e.target.value)}
                 required=""
                 autoFocus=""
@@ -114,7 +117,7 @@ function Transaksi() {
               <input
                 id="inputAlamat"
                 type="alamat"
-                placeholder="Alamat"
+                placeholder={context.lang==='en' ? 'Address' : 'Alamat'}
                 onChange={(e) => setAdress(e.target.value)}
                 required=""
                 autoFocus=""
@@ -124,7 +127,7 @@ function Transaksi() {
               <input
                 id="inputEmail"
                 type="email"
-                placeholder="Email Addres"
+                placeholder={context.lang==='en' ? 'Email' : 'Email'}
                 onChange={(e) => setEmail(e.target.value)}
                 required=""
                 autoFocus=""
@@ -134,7 +137,7 @@ function Transaksi() {
               <input
                 id="inputNoHandphone"
                 type="handphone"
-                placeholder="No Handphone"
+                placeholder={context.lang==='en' ? 'Phone Number' : 'Nomor Handphone'}
                 onChange={(e) => setHandphone(e.target.value)}
                 required=""
                 autoFocus=""
@@ -146,7 +149,7 @@ function Transaksi() {
             <fieldset>
               <h4><strong>Booking</strong></h4>
               <Form.Group className="mb-3 form-trs">
-                <Form.Label htmlFor="">Kota Destinasi</Form.Label>
+                <Form.Label htmlFor="">{context.lang==='en' ? 'Destination City' : 'Kota Destinasi'}</Form.Label>
                 <Form.Select value={destinationSelect} onChange={handleChange}>
                   <option>Search Your Destination</option>
                   <option value={'SumbawaBesar'}>Sumbawa Besar</option>
@@ -155,7 +158,7 @@ function Transaksi() {
               </Form.Group>
 
               <Form.Group className="mb-3 form-trs">
-                <Form.Label htmlFor="">Tujuan Wisata</Form.Label>
+                <Form.Label htmlFor="">{context.lang==='en' ? 'Tourist Destination' : 'Tujuan Destinasi'}</Form.Label>
                 <Form.Select id="" onChange={(e) => hendleKota()} >
                   <option>Daftar Destinasi</option>
 
@@ -175,15 +178,15 @@ function Transaksi() {
                 </Form.Select>
               </Form.Group>
               <Form.Group className="mb-3 form-trs">
-                <Form.Label htmlFor="">Your Trip</Form.Label>
+                <Form.Label htmlFor="">{context.lang==='en' ? 'Your Trip' : 'Perjalananmu'}</Form.Label>
                 <Form.Select id="">
-                  <option>Choose Your Type</option>
+                  <option>{context.lang==='en' ? 'Choose Your Trip' : 'Pilih Perjalananmu'}</option>
                   <option>Adventure</option>
                   <option>Camping</option>
                 </Form.Select>
               </Form.Group>
               <Form.Group className="mb-3 form-trs">
-                <Form.Label htmlFor="">Choose Ticket </Form.Label>
+                <Form.Label htmlFor="">{context.lang==='en' ? 'Choose Ticket ' : 'Pilih Tiket'} </Form.Label>
                 <input type="date"></input>
               </Form.Group>
               <Button type="submit" onClick={biodata} >CHECKOUT</Button>
