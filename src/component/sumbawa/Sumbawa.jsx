@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './sumbawa.css'
 import { useNavigate } from 'react-router-dom'
+import { AppContext } from '../../context/AppContext'
 
 function Sumbawa() {
 
@@ -36,6 +37,8 @@ function Sumbawa() {
     getApiDataSumbawa()
   }, [])
 
+  const context = React.useContext(AppContext)
+
   return (
     <>
       <div className='bgsumbawa'>
@@ -64,7 +67,7 @@ function Sumbawa() {
                       <Button variant="primary" onClick={() => trasnferDataModal(
                         { id, namaTempat, lokasi, images, price, Deskipsi }
                       )}>
-                        Detail Destinasi
+                        {context.lang==='en' ? 'Destination Details' : 'Detail Destinasi'}
                       </Button>
 
                     </Card.Footer>
@@ -80,7 +83,7 @@ function Sumbawa() {
               <Modal.Body>{modalReact.Deskipsi}</Modal.Body>
               <Modal.Footer>
                   <Button variant="primary" onClick={()=>handleBook(modalReact.id)}>
-                    Booking Ticket
+                  {context.lang==='en' ? 'Booking Ticket' : 'Pesan Tiket'}
                   </Button>
               </Modal.Footer>
             </Modal>

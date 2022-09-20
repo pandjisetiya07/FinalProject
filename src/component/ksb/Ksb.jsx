@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './ksb.css'
 import { useNavigate } from 'react-router-dom'
-
+import { AppContext } from '../../context/AppContext'
 
 function Ksb() {
 
@@ -37,6 +37,8 @@ function Ksb() {
     getApiDataSumbawa()
   }, [])
 
+  const context = React.useContext(AppContext)
+
   return (
     <>
       <NavBar />
@@ -64,7 +66,7 @@ function Ksb() {
                     <Button variant="primary" onClick={() => trasnferDataModal(
                       { id, namaTempat, lokasi, images, price, Deskipsi }
                     )}>
-                      Detail Destinasi
+                      {context.lang==='en' ? 'Destination Details' : 'Detail Destinasi'}
                     </Button>
 
                   </Card.Footer>
@@ -80,7 +82,7 @@ function Ksb() {
             <Modal.Body>{modalReact.Deskipsi}</Modal.Body>
             <Modal.Footer>
               <Button variant="primary" onClick={() => handleBook(modalReact.id)}>
-                Booking Ticket
+              {context.lang==='en' ? 'Booking Ticket' : 'Pesan Tiket'}
               </Button>
             </Modal.Footer>
           </Modal>
