@@ -31,7 +31,7 @@ function NavBar() {
     <>
       <Navbar className='navbarr navbar-dark' expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#">NgiungTravel</Navbar.Brand>
+          <Navbar.Brand href="#">NgiungTRVL</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
