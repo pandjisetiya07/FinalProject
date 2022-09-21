@@ -9,6 +9,7 @@ import Footer from "./component/Footer/Footer";
 import Register from "./component/Register/Register";
 import { AppContext } from './context/AppContext';
 import { useState } from 'react';
+import ConfirmTransaksi from "./component/Transaksi/ConfirmTransaksi";
 
 function App() {
   const [language, setLanguage] = useState("en")
@@ -29,6 +30,7 @@ function App() {
           <Route path="transaksi/:tujuan/:id" element={<Transaksi />} />
           <Route path="Login" element={<Login />} />
           <Route path="Register" element={<Register />} />
+          <Route path="ConfirmTransaksi" element={<ConfirmTransaksi />} />
         </Routes>
         <Footer />
       </AppContext.Provider>

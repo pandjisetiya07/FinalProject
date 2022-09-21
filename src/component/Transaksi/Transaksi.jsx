@@ -4,21 +4,30 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Navbar from '../Navbar/NavBar';
 import axios from 'axios';
-import { useParams } from 'react-router-dom'
+import { useParams, useLocation, json } from 'react-router-dom'
 import Swal from "sweetalert2";
 
 
 function Transaksi() {
   // penanda saat user select antara sumbawa besar dan barat
   // Sumbawa Besar || Sumbawa Barat
+  const {state} = useLocation()
   const [destinationSelect, setDestinationSelect] = useState("")
   const [destinasiSumbawa, setDestinasiSumbawa] = useState([]);
   const [destinasiSumbawaBarat, setDestinasiSumbawaBarat] = useState([]);
   const [stateTransaksi, setStateTransaksi] = useState({});
+  const [selectTrip, setSelectTrip] = useState("")
+  const [booking, setBooking] = useState({
+    kotaDestinasi : state.lokasi,
+    tujuan : state.namaTempat,
+    tipeTrip: "",
+    date : ""
+  })
   const { tujuan, id } = useParams();
 
   const handleChange = (event) => {
     setDestinationSelect(event.target.value);
+    setSelectTrip(event.target.value);
   }
 
   const fetchPromise = async () => {
@@ -35,12 +44,14 @@ function Transaksi() {
     filteretSumbawa()
     filteretSumbawaBarat()
     setDestinationSelect(tujuan)
+    // hendleKota()
+    console.log(state);
   }, []);
 
-
-  const hendleKota = (event) => {
-    const getKotaId = event.target.value;
-  }
+  useEffect(() => {
+    console.log(destinationSelect);
+    console.log(booking);
+  }, [destinationSelect, booking])
 
   const filteretSumbawa = () => {
     const selectTransaksi = destinasiSumbawa.filter((destinasi) => {
@@ -73,24 +84,33 @@ function Transaksi() {
     }
     console.log(data);
 
-    // axios.post('https://631843e9f6b281877c677851.mockapi.io/register', data)
-    // .then(result => {
-    //   console.log(result.status)
-    //   if (result.status === 201) {
-    //     Swal.fire({
-    //       title: "Good job!",
-    //       text: "Berhasil Register ",
-    //       icon: "success",
-    //       button: "Aww yiss!",
-    //     }).then((result) => {
-    //       if (result.value) {
-    //         window.location.href = `/Login`
-    //       }
-    //     })
-    //   } else {
-    //     alert('tidak berhasil register')
-    //   }
-    // })
+    const body = {
+      dataPemesan : data,
+      pemenasan: booking
+    }
+
+    const userLogin = localStorage.getItem('login')
+    const dataLogin = JSON.parse(userLogin)
+
+    axios.put(`https://631843e9f6b281877c677851.mockapi.io/register/${Number(dataLogin.id)}`, {...dataLogin, transaksi: dataLogin.transaksi.concat(body)})
+    .then(result => {
+      console.log(result.status)
+      if (result.status === 200) {
+        localStorage.setItem('login', JSON.stringify(result.data))
+        Swal.fire({
+          title: "Good job!",
+          text: "Booking Tiket Berhasil",
+          icon: "success",
+          button: "Aww yiss!",
+        }).then((result) => {
+          if (result.value) {
+            window.location.href = `/ConfirmTransaksi`
+          }
+        })
+      } else {
+        alert('tidak berhasil register')
+      }
+    })
   }
 
   return (
@@ -156,12 +176,14 @@ function Transaksi() {
 
               <Form.Group className="mb-3 form-trs">
                 <Form.Label htmlFor="">Tujuan Wisata</Form.Label>
-                <Form.Select id="" onChange={(e) => hendleKota()} >
+                <Form.Select id="">
                   <option>Daftar Destinasi</option>
 
                   {
                     destinationSelect === 'SumbawaBesar' && destinasiSumbawa.map((daftarNama) => (
+                      
                       <option selected={id === daftarNama.id} key={daftarNama.id} value={daftarNama.id}>{daftarNama.namaTempat}</option>
+                      
                     )
                     )
                   }
@@ -176,10 +198,10 @@ function Transaksi() {
               </Form.Group>
               <Form.Group className="mb-3 form-trs">
                 <Form.Label htmlFor="">Your Trip</Form.Label>
-                <Form.Select id="">
+                <Form.Select value={selectTrip} onChange={handleChange}>
                   <option>Choose Your Type</option>
-                  <option>Adventure</option>
-                  <option>Camping</option>
+                  <option value={'adventure'}>Adventure</option>
+                  <option value={'camping'}>Camping</option>
                 </Form.Select>
               </Form.Group>
               <Form.Group className="mb-3 form-trs">
