@@ -73,9 +73,6 @@ function Transaksi() {
 
 
   const USER_REGEX = /^[A-z][A-z0-9-_" "|""]{3,23}$/;
-  const ADDRESS_REGEX = /^[A-z][A-z0-9-_" "|""]{6,23}$/;
-
-  const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
   const ADDRESS_REGEX = /^[A-z][A-z0-9-_ " "|""]{6,23}$/;
   const EMAIL_REGEX = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
   const PHONE_REGEX = /^(\+62|62|0)8[1-9][0-9]{6,9}$/;
