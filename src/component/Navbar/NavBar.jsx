@@ -53,7 +53,7 @@ function NavBar() {
                 isLogin ?
                   <Nav.Link onClick={handleLogout}>{context.lang==='en' ? 'Logout' : 'Keluar'}</Nav.Link>
                   :
-                  <Nav.Link href="/Login">
+                  <Nav.Link href="/login">
                     {context.lang==='en' ? 'Login' : 'Masuk'}
                   </Nav.Link>
               }
