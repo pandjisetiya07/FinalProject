@@ -1,10 +1,9 @@
 import React from 'react'
 import NavBar from '../Navbar/NavBar'
-import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from "react-router-dom";
 
 function ConfirmTransaksi() {
   const [BookingRegister, setBookingRegister] = useState([])
@@ -49,23 +48,36 @@ function ConfirmTransaksi() {
                   </Form.Group>
                 </div>
                 <div className="col-6">
-                   <Form.Group className="mb-3">
+                  <Form.Group className="mb-3">
                     <Form.Label>Tujuan Destinasi</Form.Label>
                     <Form.Control placeholder={get.pemenasan.tujuan} disabled />
                   </Form.Group>
                 </div>
                 <div className="col-6">
-                   <Form.Group className="mb-3">
+                  <Form.Group className="mb-3">
                     <Form.Label>No Telpon</Form.Label>
                     <Form.Control placeholder={get.dataPemesan.handphone} disabled />
                   </Form.Group>
                 </div>
+                <div className="col-6">
+                  <Form.Group className="mb-3">
+                    <Form.Label>Kota Destinasi</Form.Label>
+                    <Form.Control placeholder={get.pemenasan.kotaDestinasi} disabled />
+                  </Form.Group>
+                </div>
+                <hr/>
               </div>
-            </div>
+            </div> 
           )
         })
       }
-
+      <div className="container">
+        <Link to="/">
+          <button type="button" className="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">
+            Home
+          </button>
+        </Link>
+      </div>
 
 
     </>
