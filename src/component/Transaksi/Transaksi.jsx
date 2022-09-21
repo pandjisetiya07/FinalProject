@@ -71,6 +71,10 @@ function Transaksi() {
     console.log(selectTransaksi);
   }
 
+
+  const USER_REGEX = /^[A-z][A-z0-9-_" "|""]{3,23}$/;
+  const ADDRESS_REGEX = /^[A-z][A-z0-9-_" "|""]{6,23}$/;
+
   const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
   const ADDRESS_REGEX = /^[A-z][A-z0-9-_ " "|""]{6,23}$/;
   const EMAIL_REGEX = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
@@ -164,7 +168,7 @@ function Transaksi() {
       <div name='payment' className='transaksi'>
         <div className="container">
           <div className="right">
-            <h4>Biodata Diri</h4>
+            <h4>Biodata</h4>
             <div className="mb-3">
               <label htmlFor="user">
                 <span className={validName ? "valid" : "hide"}>
