@@ -28,9 +28,9 @@ function App() {
           <Route path="ksb" element={<Ksb />} />
           <Route path="aboutus" element={<AboutUs />} />
           <Route path="transaksi/:tujuan/:id" element={<Transaksi />} />
-          <Route path="Login" element={<Login />} />
-          <Route path="Register" element={<Register />} />
-          <Route path="ConfirmTransaksi" element={<ConfirmTransaksi />} />
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
+          <Route path="confirmTransaksi" element={<ConfirmTransaksi />} />
         </Routes>
         <Footer />
       </AppContext.Provider>

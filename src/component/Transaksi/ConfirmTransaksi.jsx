@@ -55,14 +55,14 @@ function ConfirmTransaksi() {
                 </div>
                 <div className="col-6">
                   <Form.Group className="mb-3">
-                    <Form.Label>No Telpon</Form.Label>
-                    <Form.Control placeholder={get.dataPemesan.handphone} disabled />
+                    <Form.Label>Kota Destinasi</Form.Label>
+                    <Form.Control placeholder={get.pemenasan.kotaDestinasi} disabled />
                   </Form.Group>
                 </div>
                 <div className="col-6">
                   <Form.Group className="mb-3">
-                    <Form.Label>Kota Destinasi</Form.Label>
-                    <Form.Control placeholder={get.pemenasan.kotaDestinasi} disabled />
+                    <Form.Label>No Telpon</Form.Label>
+                    <Form.Control placeholder={get.dataPemesan.handphone} disabled />
                   </Form.Group>
                 </div>
                 <hr/>
